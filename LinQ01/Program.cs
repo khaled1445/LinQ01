@@ -20,6 +20,15 @@ namespace LinQ01
             //}
             #endregion
 
+            #region Q2. Get a list of only the product names from ProductList. Print each name
+            //var query02 = from p in Source.ProductList
+            //             select p.ProductName;
+
+            //foreach (var p in query02) 
+            //{
+            //    Console.WriteLine($"Product Name: {p}");
+            //}
+            #endregion
         }
     }
 }
