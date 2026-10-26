@@ -130,6 +130,17 @@ namespace LinQ01
             //    Console.WriteLine($"{item.Position,3}  {item.ProductName}");
 
             #endregion
+
+            #region Q12 Sort first by-word length and then by a case-insensitive sort of the words in an array.
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            
+            //var query = Arr.OrderBy(w => w.Length)
+            //                .ThenBy(w => w, StringComparer.OrdinalIgnoreCase);
+            
+            //foreach (var w in query)
+            //    Console.WriteLine(w);
+            
+            #endregion
         }
     }
 }
