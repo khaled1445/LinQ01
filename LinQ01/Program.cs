@@ -33,10 +33,19 @@ namespace LinQ01
             #region Q3. Sort all products by UnitPrice (ascending). Print each product's name and price
 
             //var query = Source.ProductList.OrderBy(p => p.UnitPrice);
-            
+
             //foreach (var p in query)
             //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice:F2}");
-          
+
+            #endregion
+
+            #region Get all products where UnitPrice is between 10 and 30
+
+            var query = from p in Source.ProductList
+                        where p.UnitPrice >= 10 && p.UnitPrice <= 30
+                        select p;
+            foreach (var p in query)
+                Console.WriteLine($"{p.ProductName} - {p.UnitPrice:F2}");
             #endregion
         }
     }
