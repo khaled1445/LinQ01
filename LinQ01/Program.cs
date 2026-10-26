@@ -1,8 +1,10 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
+﻿using LinQ01.DataSources;
 using LinQ01.Models;
-using LinQ01.DataSources;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Xml.Linq;
 namespace LinQ01
 {
     internal class Program
@@ -51,10 +53,28 @@ namespace LinQ01
             #region Q5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Spices & Condiments" category
             //var query = Source.ProductList
             //    .Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments");
-            
+
             //foreach (var p in query)
             //    Console.WriteLine(p);
+
+            #endregion
+
+            #region Q6 Create a new anonymous type with three properties:
+            // Name → the product name
+            // Price → the unit price
+            // StockStatus → a string: "Available" if UnitsInStock > 0, otherwise "Out of Stock"
+            // Print the result.
             
+            //var query = Source.ProductList
+            //    .Select(p => new
+            //{
+            //    Name = p.ProductName,
+            //    Price = p.UnitPrice,
+            //    StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
+            //});
+            //foreach (var item in query)
+            //    Console.WriteLine($"{item.Name} | {item.Price:F2} | {item.StockStatus}");
+
             #endregion
         }
     }
