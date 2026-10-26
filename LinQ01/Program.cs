@@ -29,6 +29,15 @@ namespace LinQ01
             //    Console.WriteLine($"Product Name: {p}");
             //}
             #endregion
+
+            #region Q3. Sort all products by UnitPrice (ascending). Print each product's name and price
+
+            //var query = Source.ProductList.OrderBy(p => p.UnitPrice);
+            
+            //foreach (var p in query)
+            //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice:F2}");
+          
+            #endregion
         }
     }
 }
