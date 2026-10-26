@@ -88,13 +88,22 @@ namespace LinQ01
             #endregion
 
             #region Q8 Sort ProductList by Category ascending, then within each category, sort by UnitPrice descending
-            
+
             //var query = Source.ProductList
             //                   .OrderBy(p => p.Category)
             //                   .ThenByDescending(p => p.UnitPrice);
             //foreach (var p in query)
             //    Console.WriteLine($"{p.Category,-22} {p.ProductName,-30} {p.UnitPrice:F2}");
 
+            #endregion
+
+            #region Q9 Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
+            //var query = Source.ProductList
+            //                 .Where(p => p.Category == "Beverages")
+            //                 .OrderByDescending(p => p.UnitsInStock);
+            //foreach (var p in query)
+            //    Console.WriteLine($"{p.ProductName} - Stock: {p.UnitsInStock}");
+        
             #endregion
         }
     }
