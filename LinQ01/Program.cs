@@ -39,13 +39,13 @@ namespace LinQ01
 
             #endregion
 
-            #region Get all products where UnitPrice is between 10 and 30
+            #region Q4. Get all products where UnitPrice is between 10 and 30
 
-            var query = from p in Source.ProductList
-                        where p.UnitPrice >= 10 && p.UnitPrice <= 30
-                        select p;
-            foreach (var p in query)
-                Console.WriteLine($"{p.ProductName} - {p.UnitPrice:F2}");
+            //var query = from p in Source.ProductList
+            //            where p.UnitPrice >= 10 && p.UnitPrice <= 30
+            //            select p;
+            //foreach (var p in query)
+            //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice:F2}");
             #endregion
         }
     }
