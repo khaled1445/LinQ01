@@ -103,7 +103,19 @@ namespace LinQ01
             //                 .OrderByDescending(p => p.UnitsInStock);
             //foreach (var p in query)
             //    Console.WriteLine($"{p.ProductName} - Stock: {p.UnitsInStock}");
-        
+
+            #endregion
+
+            #region Q10 Using QUERY SYNTAX with a compound from clause, list all orders placed in 1997 or later showing CustomerID and OrderDate
+            
+            //var query = from c in Source.CustomerList
+            //             from o in c.Orders
+            //             where o.OrderDate.Year >= 1997
+            //             select new { c.CustomerID, o.OrderDate };
+            
+            //foreach (var item in query)
+            //    Console.WriteLine($"{item.CustomerID} - {item.OrderDate:yyyy-MM-dd}");
+            
             #endregion
         }
     }
