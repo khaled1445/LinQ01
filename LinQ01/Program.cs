@@ -79,13 +79,23 @@ namespace LinQ01
 
             #region Q7 Print each product's name along with its position (1-based) in the list. Expected format: 1. Chai, 2. Chang, etc.
 
-            var query = Source.ProductList
-                .Select((p, index) => $"{index + 1}. {p.ProductName}");
+            //var query = Source.ProductList
+            //    .Select((p, index) => $"{index + 1}. {p.ProductName}");
 
-            foreach (var p in query)
-                Console.WriteLine(p);
-        
+            //foreach (var p in query)
+            //    Console.WriteLine(p);
+
             #endregion
-    }
+
+            #region Q8 Sort ProductList by Category ascending, then within each category, sort by UnitPrice descending
+            
+            //var query = Source.ProductList
+            //                   .OrderBy(p => p.Category)
+            //                   .ThenByDescending(p => p.UnitPrice);
+            //foreach (var p in query)
+            //    Console.WriteLine($"{p.Category,-22} {p.ProductName,-30} {p.UnitPrice:F2}");
+
+            #endregion
+        }
     }
 }
