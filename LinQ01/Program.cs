@@ -47,6 +47,15 @@ namespace LinQ01
             //foreach (var p in query)
             //    Console.WriteLine($"{p.ProductName} - {p.UnitPrice:F2}");
             #endregion
+
+            #region Q5. Get all products that are in stock (UnitsInStock > 0) and belong to the "Spices & Condiments" category
+            //var query = Source.ProductList
+            //    .Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments");
+            
+            //foreach (var p in query)
+            //    Console.WriteLine(p);
+            
+            #endregion
         }
     }
 }
