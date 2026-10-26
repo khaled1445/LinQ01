@@ -64,7 +64,7 @@ namespace LinQ01
             // Price → the unit price
             // StockStatus → a string: "Available" if UnitsInStock > 0, otherwise "Out of Stock"
             // Print the result.
-            
+
             //var query = Source.ProductList
             //    .Select(p => new
             //{
@@ -76,6 +76,16 @@ namespace LinQ01
             //    Console.WriteLine($"{item.Name} | {item.Price:F2} | {item.StockStatus}");
 
             #endregion
-        }
+
+            #region Q7 Print each product's name along with its position (1-based) in the list. Expected format: 1. Chai, 2. Chang, etc.
+
+            var query = Source.ProductList
+                .Select((p, index) => $"{index + 1}. {p.ProductName}");
+
+            foreach (var p in query)
+                Console.WriteLine(p);
+        
+            #endregion
+    }
     }
 }
